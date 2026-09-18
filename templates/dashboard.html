@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - GymApp</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ecf0f1;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            background-color: #e74c3c;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #c0392b;
+        }
+        .container {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h3 style="margin:0;">Panel de Gestión - GymApp</h3>
+        <a href="/">Cerrar Sesión</a>
+    </div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>¡Bienvenido, {{ usuario }}!</h2>
+            <p>El sistema está funcionando a la perfección. En este espacio es donde próximamente construiremos el calendario y la tabla para gestionar los turnos de los clientes.</p>
+        </div>
+    </div>
+</body>
+</html>
